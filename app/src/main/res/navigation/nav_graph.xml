@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMenuFragment">
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.counting.MainMenuFragment"
+        android:label="MainMenuFragment" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_mathProblemsFragment"
+            app:destination="@id/mathProblemsFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_mathInequalitiesFragment"
+            app:destination="@id/mathInequalitiesFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_scoresFragment"
+            app:destination="@id/scoresFragment" >
+            <argument
+                android:name="mode" />
+            <argument
+                android:name="score"
+                android:defaultValue="0" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/mathProblemsFragment"
+        android:name="com.example.counting.mathproblems.MathProblemsFragment"
+        android:label="MathProblemsFragment" >
+        <action
+            android:id="@+id/action_mathProblemsFragment_to_scoresFragment"
+            app:destination="@id/scoresFragment"
+            app:popUpTo="@id/mainMenuFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/mathInequalitiesFragment"
+        android:name="com.example.counting.mathinequalities.MathInequalitiesFragment"
+        android:label="MathInequalitiesFragment" >
+        <action
+            android:id="@+id/action_mathInequalitiesFragment_to_scoresFragment"
+            app:destination="@id/scoresFragment"
+            app:popUpTo="@id/mainMenuFragment"
+            app:popUpToInclusive="false">
+            <argument android:name="mode" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/scoresFragment"
+        android:name="com.example.counting.ScoresFragment"
+        android:label="ScoresFragment" >
+        <argument
+            android:name="mode" />
+        <argument
+            android:name="score"
+            app:argType="integer" />
+    </fragment>
+</navigation>

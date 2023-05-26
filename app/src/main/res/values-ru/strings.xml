@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Математические упражнения</string>
+    <string name="solve_problems">Решение примеров</string>
+    <string name="solve_inequalities">Решение неравенств</string>
+    <string name="scores">Результаты</string>
+    <string name="right_answer">Правильно!</string>
+    <string name="wrong_answer">Неправильно!</string>
+    <string name="times_up">Время вышло!</string>
+    <string name="solveProblem">Решите пример:</string>
+    <string name="refresh">Заменить</string>
+    <string name="gamesOver">Игра окончена!</string>
+    <string name="greater"> Больше или равно </string>
+    <string name="less"> Меньше </string>
+
+    <string name="score"> Счет: %1d </string>
+    <string name="livesLeft"> Жизни: %1d </string>
+    <string name="solving_inequalities">Решение неравенств</string>
+    <string name="solving_problems">Решение примеров</string>
+</resources>

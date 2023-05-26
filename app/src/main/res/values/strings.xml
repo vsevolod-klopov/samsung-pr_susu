@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Counting Exercises</string>
+    <string name="solve_problems">Solve problems</string>
+    <string name="solve_inequalities">Solve inequalities</string>
+    <string name="scores">Table of scores</string>
+    <string name="right_answer">Right answer!</string>
+    <string name="wrong_answer">Wrong answer!</string>
+    <string name="times_up">Time\'s up!</string>
+    <string name="solveProblem">Solve the problem:</string>
+    <string name="refresh">Refresh</string>
+    <string name="gamesOver">Game\'s over!</string>
+    <string name="greater"> Greater or equal </string>
+    <string name="less"> Less </string>
+
+    <string name="score"> Score: %1d </string>
+    <string name="livesLeft"> Lives: %1d </string>
+    <string name="solving_inequalities">Solving inequalities</string>
+    <string name="solving_problems">Solving problems</string>
+</resources>
